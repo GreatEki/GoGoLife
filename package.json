@@ -4,6 +4,7 @@
     "description": "",
     "main": "src/server.ts",
     "scripts": {
+        "client-install": "cd client && yarn install",
         "build": "tsc -p .",
         "start": "node dist/server.js",
         "server": "nodemon --exec ts-node src/server.ts",
