@@ -13,7 +13,7 @@ Getting Started
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. 
 
 ---
-Installation
+# Installation
 
 download or git clone project to your local machine.
 
@@ -40,7 +40,7 @@ NOTE: We can also execute both the client and server sides of the application co
 Execute the command: 'npm run app'.
 
 ---
-PROJECT NOTES.
+# PROJECT NOTES.
 The Navigation menu is available at the bottom of the screen.
 
 Contents of the pages are rendered dynamically and are served from the server.
