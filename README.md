@@ -30,14 +30,21 @@ eg. redux, react-redux, axios etc
 NOTE: the client side of the project uses yarn as package manager.
 
 Executing the project.
-To run the client side of the project - execute the command 'npm run client'
-You do not not necesarily need to naviagte into the client directory to run the react app.
+To run the client side of the project - execute the command:
 
-To run the server side of the app. Execute the command 'npm run server'
+'npm run client'
+
+NOTE: You do not necesarily need to navigate into the client directory to run the react app.
+
+To run the server side of the app. Execute the command: 
+
+'npm run server'
 
 NOTE: We can also execute both the client and server sides of the application concurrently.
 
-Execute the command: 'npm run app'.
+To run client and server concurrently, execute the command:
+
+'npm run app'.
 
 ---
 # PROJECT NOTES.
