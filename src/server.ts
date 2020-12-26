@@ -1,10 +1,3 @@
-// const http = require('http');
-// const express = require('express');
-
-// const { Request, Response,  } = require('express-serve-static-core')
-// const path = require('path');
-// const dotenv = require('dotenv');
-
 import http from 'http';
 import express, { Application, Request, Response, NextFunction } from 'express';
 import path from 'path';

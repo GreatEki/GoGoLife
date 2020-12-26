@@ -1,6 +1,6 @@
 import { Request, Response, NextFunction } from 'express';
 import { pages } from '../data/pages';
-import { posts } from '../data/posts';
+import { PostInterface, posts } from '../data/posts';
 
 export const municipal = async (req: Request, res: Response, next: NextFunction) => {
     try {
@@ -26,7 +26,7 @@ export const municipal = async (req: Request, res: Response, next: NextFunction)
         });
 
         // Compare CategoryList with posts.categories
-        const finalResults = posts.filter((item: any) => mergedList.indexOf(item.category) !== -1);
+        const finalResults = posts.filter((item: PostInterface) => mergedList.indexOf(item.category) !== -1);
 
         return res.status(200).json({
             data: finalResults
