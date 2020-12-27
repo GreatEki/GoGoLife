@@ -3,7 +3,7 @@ import { BankFilled } from '@ant-design/icons';
 import { MunicipalityPosts } from '../../redux/types/postTypes';
 
 const TaxesAndFees = ({ municipalityPosts }: any) => {
-    const getTaxesAndFeesPosts = () => {
+    const getTaxesAndFeesPosts = (): MunicipalityPosts[] => {
         const taxesandfeesPosts = municipalityPosts.filter((post: MunicipalityPosts) => post.category === 'taxes');
 
         return taxesandfeesPosts;

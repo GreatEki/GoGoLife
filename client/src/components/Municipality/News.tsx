@@ -2,7 +2,7 @@ import React from 'react';
 import { BankFilled } from '@ant-design/icons';
 import { MunicipalityPosts } from '../../redux/types/postTypes';
 const News = ({ municipalityPosts }: any) => {
-    const getNewsPosts = () => {
+    const getNewsPosts = (): MunicipalityPosts[] => {
         const newsPosts = municipalityPosts.filter((post: MunicipalityPosts) => post.category === 'news');
 
         return newsPosts;

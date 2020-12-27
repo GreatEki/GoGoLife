@@ -3,7 +3,7 @@ import { BankFilled } from '@ant-design/icons';
 import { MunicipalityPosts } from '../../redux/types/postTypes';
 
 const ScheduleAndServices = ({ municipalityPosts }: any) => {
-    const getSchedulesAndServicesPosts = () => {
+    const getSchedulesAndServicesPosts = (): MunicipalityPosts[] => {
         const scehdleAndServicePosts = municipalityPosts.filter((post: MunicipalityPosts) => post.category === 'schedules' || post.category === 'services');
 
         return scehdleAndServicePosts;

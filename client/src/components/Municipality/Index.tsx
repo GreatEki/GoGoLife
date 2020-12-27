@@ -6,7 +6,7 @@ import ScheduleAndServices from './ScheduleAndServices';
 import TaxesAndFees from './TaxesAndFees';
 import { getMunicipalityPosts } from '../../redux/actions/postActions';
 import { RootStore } from '../../redux/Store';
-const Incio = () => {
+const Municipality = () => {
     const dispatch = useDispatch();
 
     const { municipalityPosts } = useSelector((state: RootStore) => state.posts);
@@ -29,4 +29,4 @@ const Incio = () => {
     );
 };
 
-export default Incio;
+export default Municipality;

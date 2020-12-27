@@ -3,7 +3,7 @@ import { BankFilled } from '@ant-design/icons';
 import { MunicipalityPosts } from '../../redux/types/postTypes';
 
 const Incio = ({ municipalityPosts }: any) => {
-    const getMessagesPosts = () => {
+    const getMessagesPosts = (): MunicipalityPosts[] => {
         const msgPost = municipalityPosts.filter((post: MunicipalityPosts) => post.category === 'messages');
 
         return msgPost;
@@ -12,7 +12,7 @@ const Incio = ({ municipalityPosts }: any) => {
     return (
         <div className="container">
             <section className="section_title">
-                <h4> Major Messages </h4>
+                <h4> Mayor Messages </h4>
             </section>
 
             <section className="section_contents">

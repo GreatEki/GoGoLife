@@ -16,7 +16,7 @@ export const municipal = async (req: Request, res: Response, next: NextFunction)
 
         //  Get Municipality Posts
 
-        let municipalCategories = municipalityResults.content.map((item) => item.properties.categories);
+        const municipalCategories = municipalityResults.content.map((item) => item.properties.categories);
 
         let mergedList: string[] = [];
         municipalCategories.forEach((element) => {
